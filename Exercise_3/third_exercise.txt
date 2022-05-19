@@ -1,0 +1,3 @@
+SELECT result_table_schema.name AS NAME, products_table_schema.price AS PRICE, result_table_schema.price_per_kg as REAL_PRICE FROM products_table_schema JOIN result_table_schema on products_table_schema.name = result_table_schema.name;
+SELECT ROUND(price_per_kg, 2) FROM results_table_schema;
+SELECT * FROM results_table_schema ORDER BY price_per_kg ASC, name ASC
